@@ -5,7 +5,6 @@ import multiprocessing
 
 from pydantic import BaseModel
 import cv2
-import matplotlib.pyplot as plt
 
 from mesh_gen import *
 
