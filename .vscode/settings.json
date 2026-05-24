@@ -1,0 +1,5 @@
+{
+    "python-envs.defaultEnvManager": "ms-python.python:venv"
+}
+
+// python main.py  --image_files "images\TaiChi_HighRes copy 2.bmp" --scale 0.5 --period_range 0.3 0.6
