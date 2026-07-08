@@ -9,16 +9,16 @@ pip install -r requirements.txt
 
 
 # quick start
-- pass args through conf.json
+- start without specifying args, this startup method uses configure from `conf.json` file
 ```
 python main.py
 ```
-this startup method requires to edit the `conf.json` file
 
-- pass args manually, ex.
+- start with certain args, e.g.
 ```
 python main.py  --image_files "images\TaiChi_HighRes copy 1.bmp" --scale 0.5 --period_range 0.3 0.6 --width 0.1 --height 0.02
 ```
+using `python main.py -h` for more help
 
 # conf.json example
 a valid `conf.json` file
