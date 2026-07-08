@@ -96,6 +96,8 @@ def gen_task(conf: Conf, image_files: list[str]) -> multiprocessing.Queue:
     
     task_queue = multiprocessing.Queue()
     for image in image_files:
+        if not os.path.exists(output_dir):
+            os.makedirs(output_dir)
         image_name_no_ext = os.path.splitext(os.path.basename(image))[0]
         gds_file_path = os.path.join(output_dir, image_name_no_ext+".gds")
         period_mapping = LinearGrayPeriodMapping(period_range[0], period_range[1])
